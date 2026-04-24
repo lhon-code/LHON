@@ -1,32 +1,37 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Web</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LHON</title>
 
-    <!-- CSS -->
-    <link rel="stylesheet" href="css/styles.css">
+  <!-- Tipografía editorial -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Inter:wght@300;400&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/styles.css">
 </head>
+
 <body>
 
-    <header>
-        <h1>LAWRENCE HON</h1>
-    </header>
+  <header class="header">
+    <h1>LHON</h1>
+  </header>
 
-    <main>
-        <section class="hero">
-            <h2>Bienvenido</h2>
-            <p>Tu mensaje principal aquí</p>
-        </section>
-    </main>
+  <!-- GRID DINÁMICO -->
+  <main class="gallery" id="grid"></main>
 
-    <footer>
-        <p>© 2026 - Todos los derechos reservados</p>
-    </footer>
+  <!-- LIGHTBOX -->
+  <div class="lightbox" id="lightbox">
+    <img id="lightbox-img" />
+  </div>
 
-    <!-- JS -->
-    <script src="js/script.js"></script>
+  <!-- FOOTER MINIMAL -->
+  <footer>
+    <a href="/about/">About</a>
+    <a href="/contact/">Contact</a>
+  </footer>
+
+  <script src="js/script.js"></script>
 
 </body>
 </html>
