@@ -23,9 +23,7 @@ async function loadImages() {
       const delay = Math.random() * 300;
 
       img.onload = () => {
-        setTimeout(() => {
-          img.classList.add("loaded");
-        }, delay);
+        img.classList.add("loaded");
       };
 
       img.addEventListener("click", () => {

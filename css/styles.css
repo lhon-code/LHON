@@ -8,7 +8,6 @@ body {
 /* HEADER */
 .header {
   padding: 40px 0 20px;
-  text-align: center;
 }
 
 .header h1 {
@@ -19,12 +18,22 @@ body {
   text-transform: uppercase;
 }
 
+.logo {
+  text-decoration: none;
+  color: inherit;
+}
+
 /* GRID */
 .gallery {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 10px;
-  padding: 0 40px 80px;
+}
+
+@media (max-width: 768px) {
+  .gallery {
+    grid-template-columns: 1fr;
+  }
 }
 
 .gallery img {
@@ -33,10 +42,8 @@ body {
   object-fit: cover;
   cursor: pointer;
   opacity: 0;
-  transform: scale(1.03);
-  transition: 
-    opacity 0.8s ease,
-    transform 1.2s ease;
+  transform: scale(1.02);
+  transition: opacity 0.6s ease, transform 0.6s ease;
 }
 
 .gallery img.loaded {
@@ -45,7 +52,7 @@ body {
 }
 
 .gallery img:hover {
-  transform: scale(1.02);
+  transform: scale(1.015);
 }
 
 /* LIGHTBOX */
